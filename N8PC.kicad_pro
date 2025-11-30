@@ -643,7 +643,7 @@
           "group_by": false,
           "label": "Field1",
           "name": "Field1",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,

@@ -1,103 +1,130 @@
-# 6809PC
-The 6809PC is a 6809 ATX format board with 512K RAM, 4K ROM, with a flexible programmable MMU, battery backed up RTC, 6551 UART, and 6 ISAish slots.  This computer will run the fantastic CUBIX operating system by Dave Dunfield.  
+# N8PC
+The N8PC is a Z180 ATX format board with 512K RAM, 512K of ROM, that supports RomWBW and is compatible enough with MSX to run many games.  It supports a 82c42 PS2 keyboard controller, a TMS9918 emulator (either Pico9918, F19A or Tang Nano) for 80 column video output, a Ay-3-8910 PSG for sound, a 6242 RTC, ATARI/MSX style Joysticks (2 button supported) and 6 ISAish slots.  This computer is supported by the RomWBW ecosystem with full CP/M OS Support.
 
-See this repo (https://github.com/danwerner21/CUBIX09) for ROM image and operating system.
-
-![System](images/6809PC.jpg)
+![System](images/N8PC.png)
 
 ## BUGS
-I have not built the 1.31 version, but it contains fixes for the only bug found in the 1.30 version which was in the ATX power switch circuit. The ICs in that circuit were not powered by standby power, they were powered by +5 which made them non-functional. Also the reset line on the ISA bus has the wrong polarity -- it should be active high.  There are no known remaining bugs in the 1.31 board.
 
+I have not built the 1.0 version -- PCBs on the way
 
+The 0.8 verson should not be built -- multiple pull ups are missing, the 5V rail is not robust enough and the ISA design is FUBAR.  It can be made to work, but please wait for the 1.0 version.
 
 
 ### Jumper Settings
-J1,J2,J5,J7,J9,J13 - ISA SLOT IRQ Selection
-J11 - TTL Serial Port Connection
-J12 - TTL Console Power
-
-K1 - ROM BANK Selection (2-3 high bank, 1-2 Low Bank)
-K2 - MMU Selection (1-2 Disable on int, 3-4 Clear Task register on int)
-
-JP1 - Reset Swithc Connection
-JP3 - CTS Pull Up Enable
-
-P12 - Power Switch Connection
-P15 - CPU Speed Selection
-P18 - Serial Port Connection
+[TO DO]
 
 ### Building the system
-
+[TO DO]
 
 
 ### Default Memory Map
-            $0000-$E000 - RAM
-            $E000-$EFFF - Memory Mapped IO
-            $F000-$FFFF - ROM
+** See RomWBW or C-BIOS Documentation
+RomWBW Support: https://github.com/wwarthen/RomWBW
+CBIOS MSX Game Support: https://github.com/danwerner21/msxbios
+
+Note that the CBIOS MSX game support is still a work in progress.  It does work, but there is still much work to do. I am not including any actual game ROMS, I leave that to the builder to locate those ROMs as they are easily found on the Internet.
+
+
 
 ### Bill Of Materials
-Reference|Value|Qty|Field1|Description
----------|-----|---|------|-----------
-C1-C4,C17|22 uF|5||Polarized capacitor
-C5-C16,C18-C27,C29-C33,C36-C54,C56,C58,C62|0.1 uF|49||Unpolarized capacitor
-C28|1uF|1||Polarized capacitor
-C35|10uF|1||Polarized capacitor
-C57|0.01 uF|1||Unpolarized capacitor
-C59,C60|15pf|2||Unpolarized capacitor
-C61,C63-C66|1.0 uF|5||Polarized capacitor
-D1,D2|1N4148|2||Diode
-D3,D4|D|2||Diode
-J1,J2,J5,J7,J9,J13|IRQ Selection|6||Generic connector, double row, 02x06, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
-J3,J4,J6,J8,J10,J14|Bus_ISA_8bit|6||8-bit ISA-PC bus connector
-J11|TTL SERIAL CONSOLE|1||Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)
-J12|TTL CONSOLE PWR|1||Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)
-JP1,JP3|JUMPER|2||-- mixed values --
-K1|ROM SELECT|1||Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)
-K2|MMU-INTA|1||Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)
-P1|SHADOW ADDR|1||Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
-P11|CONN_10X2|1||Generic connector, double row, 02x10, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
-P12|POWER_SW|1||Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)
-P13|14.31818 MHz CLK|1||
-P14|16.000Mhz|1||
-P15|CPU CLOCK SPEED|1||Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
-P16|CONN_4|1||Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)
-P17|1.8432 MHz CLK|1||
-P18|SERIAL|1||Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
-R1,R3|10k|2||Resistor
-R2|470|1||Resistor
-R4,R7,R26|4.7K|3||Resistor
-R5,R6,R8|1000|3||Resistor
-RR1|2200|1||9 resistor network, star topology, bussed resistors, small symbol
-RR2|22K|1||9 resistor network, star topology, bussed resistors, small symbol
-SW1|POWER|1||Push button switch, generic, two pins
-SW2|RESET|1||Push button switch, generic, two pins
-U1|74LS04|1||Hex Inverter
-U2,U34,U36,U39,U45,U46|74LS244|6||Octal Buffer and Line Driver With 3-State Output, active-low enables, non-inverting outputs
-U3|74LS682|1||
-U4|74LS86|1||Quad 2-input XOR
-U5|74LS02|1||quad 2-input NOR gate
-U6,U21|74LS00|2||quad 2-input NAND gate
-U7,U10,U16|74LS32|3||Quad 2-input OR
-U8|SRAM_512K|1||512K x 8 Low Power CMOS RAM, DIP-32
-U9,U15|74LS08|2||Quad And2
-U11|27C256|1||OTP EPROM 256 KiBit
-U12,U22|74LS74|2||Dual D Flip-flop, Set & Reset
-U17|74LS14|1||Hex inverter schmitt trigger
-U18|74LS06|1||Inverter Open Collect
-U19|74HCT14|1||Hex inverter schmitt trigger
-U23|74LS688|1||8-bit magnitude comparator
-U24,U42|74LS138|2||Decoder 3 to 8 active low outputs
-U25-U28,U32,U41|74LS245|6||Octal BUS Transceivers, 3-State outputs
-U29|DS1233|1||
-U30|74LS163|1||Synchronous 4-bit programmable binary Counter
-U31|74LS240|1||Octal Buffer and Line Driver With 3-State Output, active-low enables, inverting outputs
-U33|MC68B09|1||8-Bit Microprocessing unit 2.0MHz, DIP-40
-U35|74LS174|1||Hex D-type Flip-Flop, reset
-U37|74LS157|1||Quad 2 to 1 line Multiplexer
-U38|74LS374|1||8-bit Register, 3-state outputs
-U40|SRAM-32K|1||256K (32K x 8) Static RAM, 70ns, DIP-28
-U43,U44|74LS257|2||Quad 2 to 1 Multiplexer
-U47|M6242|1||M6242
-U48|G65SC51P|1||CMOS Asynchronous Communication Interface Adapter (ACIA), Serial UART, DIP-28
-U49|MAX232|1||Dual RS232 driver/receiver, 5V supply, 120kb/s, 0C-70C
-X1|RTC_OSC|1|32.768 KHz|Two pin crystal
+Reference|Value|Qty|Description
+---------|-----|---|-----------
+BT1|Battery_Cell|1|CR2032 battery holder
+C1-C4,C17|22 uF|5|Polarized capacitor
+C5-C8,C10-C13,C15,C16,C18-C27,C29-C33,C36-C41,C43-C54,C56|0.1 uF|44|Unpolarized capacitor
+C28|1uF|1|Polarized capacitor
+C34|4.7pF|1|
+C35|10uF|1|Polarized capacitor
+C55,C58,C61-C64,C67,C71-C73|1.0 uF|10|Polarized capacitor, small symbol
+C57|0.01 uF|1|Unpolarized capacitor
+C59,C60|15pf|2|Unpolarized capacitor
+C101,C102|270 pF|2|Unpolarized capacitor
+C109,C110|10 uF|2|Polarized capacitor, small symbol
+D1,D2|1N4148|2|Diode
+D3,D4|D|2|Diode
+D5|1N5817|1|20V 1A Schottky Barrier Rectifier Diode, DO-41
+D6|RUN/HALT|1|Dual LED, bidirectional
+D7|LED1|1|Light emitting diode
+D8|LED2|1|Light emitting diode
+D9|LED3|1|Light emitting diode
+D10|LED0|1|Light emitting diode
+D11|IDE|1|Light emitting diode
+D12|STATUS|1|Light emitting diode
+J1,J2,J5,J7,J9,J13|IRQ Selection|6|Generic connector, double row, 02x06
+J3,J4,J6,J8,J10,J14|Bus_ISA_8bit|6|8-bit ISA-PC bus connector
+J11|F18A TANG NANO Connector|1|Generic connector, double row, 02x10
+J12|FRONT_PANEL|1|Generic connector, double row, 02x11
+J15|MOUSE|1|6-pin Mini-DIN connector
+J16|KEYBOARD|1|6-pin Mini-DIN connector
+J17,J19|TTL SERIAL CONSOLE|2|Generic connector, single row, 01x06
+J18,J20|TTL CONSOLE PWR|2|Generic connector, single row, 01x02
+J21|KEYBOARD IRQ|1|Generic connector, double row, 02x02
+J22|BUS IRQ|1|Generic connector, double row, 02x02
+J23|VIDEO IRQ|1|Generic connector, double row, 02x02
+JP2|CTS0|1|Jumper, 2-pole, open
+JP3|CTS1|1|Jumper, 2-pole, open
+JP10|JUMPER|1|Jumper, 2-pole, open
+K2|IDE_PWR|1|Generic connector, single row, 01x03
+K3-K5,K16,K18|CONN_3|5|Generic connector, single row, 01x03
+K17|CPU_CLK|1|Generic connector, single row, 01x03
+P1|IO_ADDR|1|Generic connector, double row, 02x03
+P11|CONN_10X2|1|Generic connector, double row, 02x10
+P12|POWER_SW|1|Generic connector, single row, 01x02
+P13,P18|SERIAL|2|Generic connector, double row, 02x05
+P14|14.31818 MHz CLK|1|
+P15|AUDIO|1|Generic connector, double row, 02x05
+P16|IO_ADDR2|1|Generic connector, double row, 02x03
+P19|ASCI OSC|1|
+P27|FLOPPY|1|Generic connector, double row, 02x17
+P29|PPIDE|1|Generic connector, double row, 02x20
+P31|PARALLEL EXP|1|Generic connector, double row, 02x13
+P37|CPU OSC|1|
+P41|OSC_FDC|1|
+P43|CHAN_MIX|1|Generic connector, double row, 02x02
+P51|JOYSTICK0|1|Generic connector, double row, 02x05
+P52|JOYSTICK1|1|Generic connector, double row, 02x05
+R1,R3|10k|2|Resistor
+R2,R5,R7,R9,R10,R36|470|6|Resistor
+R4,R13,R14,R26|4.7K|4|Resistor
+R6,R17,R19,R21|1000|4|Resistor
+R8,R12,R46,R47,RN5,RR1,RR5,RR8,RV1,RV2|4700|10|9 resistor network, star topology, bussed resistors, small US symbol,Potentiometer,Resistor
+R11|100|1|Resistor
+R16,R22-R24|10K|4|Resistor
+R42|2200|1|Resistor
+RP1|150|1|8 resistor network, star topology, bussed resistors, small symbol
+SW1|POWER|1|Push button switch, generic, two pins
+SW2|RESET|1|Push button switch, generic, two pins
+U1,U3,U4,U16,U31|74LS244|5|Octal Buffer and Line Driver With 3-State Output, active-low enables, non-inverting outputs
+U2,U63|74LS14|2|Hex inverter schmitt trigger
+U5|74LS02|1|quad 2-input NOR gate
+U6,U7,U18|74LS32|3|Quad 2-input OR
+U8|74LS08|1|Quad And2
+U9,U58,U68|74LS138|3|Decoder 3 to 8 active low outputs
+U10,U35|MAX232|2|Dual RS232 driver/receiver, 5V supply, 120kb/s, 0C-70C
+U12|74LS74|1|Dual D Flip-flop, Set & Reset
+U13|27C080|1|OTP EPROM 8 MiBit (1 Mi x 8)
+U14|74LS125|1|Quad buffer 3-State outputs
+U15|74LS245|1|Octal BUS Transceivers, 3-State outputs
+U19|74HCT14|1|Hex inverter schmitt trigger
+U21,U57|74LS682N|2|
+U23|TMS9918 EMU|1|
+U24|CLK|1|
+U25|82c42|1|
+U26|74LS06|1|
+U29|DS1233|1|
+U32|74LS139|1|Dual Decoder 1 of 4, Active low outputs
+U33|74LS10|1|Triple 3-input NAND
+U34|74LS393|1|Dual BCD 4-bit counter
+U38|8255|1|Programmable Peripheral Interface, PDIP-40
+U39|74LS04|1|Hex Inverter
+U47|M6242|1|M6242
+U48|AY-3-8910|1|
+U49|74LS07N|1|Hex Buffers and Drivers With Open Collector High Voltage Outputs
+U51|STEREO_JACK|1|Audio Jack, 3 Poles (Stereo / TRS)
+U52|Z8S180|1|
+U53|SRAM_512KO|1|512K x 8 Low Power CMOS RAM, DIP-32
+U55|74LS273|1|8-bit D Flip-Flop, reset
+U61|WD37C65BJM|1|
+U66,U67|74LS157|2|Quad 2 to 1 line Multiplexer
+U70|74LS174|1|Hex D-type Flip-Flop, reset
+X1|RTC_OSC|1|Two pin crystal
