@@ -6,8 +6,8 @@
 	(paper "USLedger")
 	(title_block
 		(title "N8PC")
-		(date "2025-11-02")
-		(rev "000.8")
+		(date "2025-11-26")
+		(rev "000.9")
 		(comment 1 "https://github.com/danwerner21/N8PC")
 		(comment 2 "Based on work by Andrew Lynch and John Coffman")
 	)
@@ -3044,7 +3044,7 @@
 	)
 	(global_label "SIN_TTL1"
 		(shape output)
-		(at 257.81 106.68 0)
+		(at 257.81 104.14 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3054,7 +3054,7 @@
 		)
 		(uuid "391d74d3-8686-4555-a894-5281b6db7442")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 268.4262 106.68 0)
+			(at 268.4262 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3132,7 +3132,7 @@
 	)
 	(global_label "SIN_TTL0"
 		(shape output)
-		(at 257.81 76.2 0)
+		(at 257.81 73.66 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3142,7 +3142,7 @@
 		)
 		(uuid "5cba2aab-64d4-43db-a8ed-5e7145d6b430")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 268.4262 76.2 0)
+			(at 268.4262 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3550,7 +3550,7 @@
 	)
 	(global_label "SOUT_TTL1"
 		(shape input)
-		(at 257.81 104.14 0)
+		(at 257.81 106.68 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3560,7 +3560,7 @@
 		)
 		(uuid "e60ec01d-c1e1-4396-b7b7-1fb0209412c3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 270.1195 104.14 0)
+			(at 270.1195 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3616,7 +3616,7 @@
 	)
 	(global_label "SOUT_TTL0"
 		(shape input)
-		(at 257.81 73.66 0)
+		(at 257.81 76.2 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3626,7 +3626,7 @@
 		)
 		(uuid "f3029b14-7940-4e2f-b7cc-fd3cec5ed395")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 270.1195 73.66 0)
+			(at 270.1195 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)

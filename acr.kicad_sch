@@ -6,8 +6,8 @@
 	(paper "USLedger")
 	(title_block
 		(title "N8PC")
-		(date "2025-11-02")
-		(rev "000.8")
+		(date "2025-11-26")
+		(rev "000.9")
 		(comment 1 "https://github.com/danwerner21/N8PC")
 		(comment 2 "Based on work by Andrew Lynch and John Coffman")
 	)

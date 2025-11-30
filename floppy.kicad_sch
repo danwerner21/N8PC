@@ -6,8 +6,8 @@
 	(paper "USLedger")
 	(title_block
 		(title "N8PC")
-		(date "2025-11-02")
-		(rev "000.8")
+		(date "2025-11-26")
+		(rev "000.9")
 		(comment 1 "https://github.com/danwerner21/N8PC")
 		(comment 2 "Based on work by Andrew Lynch and John Coffman")
 	)
@@ -7422,6 +7422,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 151.13) (xy 167.64 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1adbfa9a-a6eb-4d2b-a140-9c42dfd2e00d")
+	)
+	(wire
+		(pts
 			(xy 289.56 129.54) (xy 289.56 156.21)
 		)
 		(stroke
@@ -7499,26 +7509,6 @@
 			(type default)
 		)
 		(uuid "29407ba9-e423-4312-9fea-2f8652fe5f08")
-	)
-	(wire
-		(pts
-			(xy 130.81 151.13) (xy 166.37 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2949ecbe-06df-4dc9-a32e-90dddb48fb70")
-	)
-	(wire
-		(pts
-			(xy 167.64 119.38) (xy 167.64 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ab10280-be41-4d43-89b8-9e2065862bb6")
 	)
 	(wire
 		(pts
@@ -7762,6 +7752,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 119.38) (xy 167.64 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e0711b8-3976-4075-b460-8d40b3eb64db")
+	)
+	(wire
+		(pts
 			(xy 182.88 133.35) (xy 177.8 133.35)
 		)
 		(stroke
@@ -7899,16 +7899,6 @@
 			(type default)
 		)
 		(uuid "6697caa7-c79d-4cdd-b22a-41e752d585d3")
-	)
-	(wire
-		(pts
-			(xy 166.37 151.13) (xy 166.37 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b2ee01c-ac15-4cf9-8b6f-376339ddb707")
 	)
 	(wire
 		(pts
@@ -8179,6 +8169,16 @@
 			(type default)
 		)
 		(uuid "9cae04c5-ea9f-48c1-9dd2-a69ffeda53d6")
+	)
+	(wire
+		(pts
+			(xy 130.81 153.67) (xy 166.37 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d98838b-1902-4aa7-ae10-7435c33bd775")
 	)
 	(wire
 		(pts
@@ -8802,6 +8802,16 @@
 	)
 	(wire
 		(pts
+			(xy 166.37 116.84) (xy 166.37 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5e7f184-200e-4693-a1d5-1d5f2d0fc48c")
+	)
+	(wire
+		(pts
 			(xy 222.25 161.29) (xy 294.64 161.29)
 		)
 		(stroke
@@ -8829,16 +8839,6 @@
 			(type default)
 		)
 		(uuid "fd2b80d1-377d-4980-99b0-307c6c554c01")
-	)
-	(wire
-		(pts
-			(xy 130.81 153.67) (xy 167.64 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd2c543b-d063-4fba-8326-f6a6761126cd")
 	)
 	(wire
 		(pts
@@ -9447,13 +9447,13 @@
 	(symbol
 		(lib_id "74xx:74LS32")
 		(at 137.16 111.76 0)
-		(unit 4)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00004ccaf178")
-		(property "Reference" "U59"
+		(property "Reference" "U6"
 			(at 137.922 111.76 0)
 			(effects
 				(font
@@ -9541,8 +9541,8 @@
 		(instances
 			(project "N8PC"
 				(path "/d94f9d60-5ece-4752-b49c-b0d1c95f35bc/2083a38b-f429-4889-aed4-507d154b3f47"
-					(reference "U59")
-					(unit 4)
+					(reference "U6")
+					(unit 2)
 				)
 			)
 		)
@@ -9550,13 +9550,13 @@
 	(symbol
 		(lib_id "74xx:74LS32")
 		(at 137.16 124.46 0)
-		(unit 3)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00004ccaf179")
-		(property "Reference" "U59"
+		(property "Reference" "U6"
 			(at 137.668 124.46 0)
 			(effects
 				(font
@@ -9644,8 +9644,8 @@
 		(instances
 			(project "N8PC"
 				(path "/d94f9d60-5ece-4752-b49c-b0d1c95f35bc/2083a38b-f429-4889-aed4-507d154b3f47"
-					(reference "U59")
-					(unit 3)
+					(reference "U6")
+					(unit 1)
 				)
 			)
 		)
@@ -9675,7 +9675,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP9"
+		(property "Footprint" "Custom:STD_DDW_SIP9"
 			(at 309.88 170.815 90)
 			(effects
 				(font

@@ -6,8 +6,8 @@
 	(paper "B")
 	(title_block
 		(title "N8PC")
-		(date "2025-11-02")
-		(rev "000.8")
+		(date "2025-11-26")
+		(rev "000.9")
 		(comment 1 "https://github.com/danwerner21/N8PC")
 		(comment 2 "Based on work by Andrew Lynch and John Coffman")
 	)
@@ -4538,7 +4538,7 @@
 		)
 		(uuid "8e821ce6-0812-44d6-9dcd-ea970dec481f")
 	)
-	(text "80-83 ppi1\n84-87 PPI2\n88-8B open\n8C-8F FDC\n90-93 UTIL\n94-97 ACRRCS\n98-9B VDPCS\n9C-9F SNDCS\n"
+	(text "80-83 8242 KBD\n84-87 PPI2\n88-8B open\n8C-8F FDC\n90-93 UTIL\n94-97 ACRRCS\n98-9B VDPCS\n9C-9F SNDCS\n"
 		(exclude_from_sim no)
 		(at 201.676 70.358 0)
 		(effects
@@ -4679,8 +4679,8 @@
 		(uuid "6a6c2956-5d4f-4e4c-af64-09900cc8651e")
 	)
 	(no_connect
-		(at 166.37 50.8)
-		(uuid "8ec4043a-c953-4c3a-a8a7-b2342a66d4fe")
+		(at 240.03 184.15)
+		(uuid "8edb612e-9575-43f1-ba97-fb1d7a9bc4cf")
 	)
 	(no_connect
 		(at 154.94 205.74)
@@ -5071,6 +5071,16 @@
 			(type default)
 		)
 		(uuid "42542e5c-c3e5-47e9-a166-b5b85f140482")
+	)
+	(wire
+		(pts
+			(xy 166.37 50.8) (xy 180.34 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4333bd48-2b29-43f8-9f51-bf4354c0c5f9")
 	)
 	(wire
 		(pts
@@ -6008,6 +6018,28 @@
 			)
 		)
 	)
+	(global_label "{slash}CS_FP"
+		(shape output)
+		(at 180.34 50.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1d0942e8-57a2-4c5e-a5cc-b0856f3a7f0f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 189.8072 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "{slash}M1"
 		(shape input)
 		(at 267.97 50.8 180)
@@ -6052,7 +6084,7 @@
 			)
 		)
 	)
-	(global_label "EXTIORQ"
+	(global_label "{slash}INTIORQ"
 		(shape output)
 		(at 134.62 67.31 0)
 		(fields_autoplaced yes)
@@ -6064,7 +6096,7 @@
 		)
 		(uuid "2ecc9822-ed76-4442-8b85-5e4c950a8733")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 144.8129 67.31 0)
+			(at 145.7202 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)

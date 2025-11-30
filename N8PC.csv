@@ -1,0 +1,99 @@
+Reference,Value,Qty,Field1,Description
+C1-C4`C17,22 uF,5,,Polarized capacitor
+C5-C8`C10-C13`C15`C16`C18-C27`C29-C33`C36-C41`C43-C54`C56,0.1 uF,44,,Unpolarized capacitor
+C28,1uF,1,,Polarized capacitor
+C34,4.7pF,1,,
+C35,10uF,1,,Polarized capacitor
+C55`C58`C61-C64`C67`C71-C73,1.0 uF,10,,Polarized capacitor` small symbol
+C57,0.01 uF,1,,Unpolarized capacitor
+C59`C60,15pf,2,,Unpolarized capacitor
+C101`C102,270 pF,2,,Unpolarized capacitor
+C109`C110,10 uF,2,,Polarized capacitor` small symbol
+D1`D2,1N4148,2,,Diode
+D3`D4,D,2,,Diode
+D5,1N5817,1,,20V 1A Schottky Barrier Rectifier Diode` DO-41
+D6,RUN/HALT,1,,Dual LED` bidirectional
+D7,LED1,1,,Light emitting diode
+D8,LED2,1,,Light emitting diode
+D9,LED3,1,,Light emitting diode
+D10,LED0,1,,Light emitting diode
+D11,IDE,1,,Light emitting diode
+D12,STATUS,1,,Light emitting diode
+J1`J2`J5`J7`J9`J13,IRQ Selection,6,,Generic connector` double row` 02x06` odd/even pin numbering scheme (row 1 odd numbers` row 2 even numbers)` script generated (kicad-library-utils/schlib/autogen/connector/)
+J3`J4`J6`J8`J10`J14,Bus_ISA_8bit,6,,8-bit ISA-PC bus connector
+J11,F18A TANG NANO Connector,1,,Generic connector` double row` 02x10` odd/even pin numbering scheme (row 1 odd numbers` row 2 even numbers)` script generated (kicad-library-utils/schlib/autogen/connector/)
+J15,MOUSE,1,,6-pin Mini-DIN connector
+J16,KEYBOARD,1,,6-pin Mini-DIN connector
+J17`J19,TTL SERIAL CONSOLE,2,,Generic connector` single row` 01x06` script generated (kicad-library-utils/schlib/autogen/connector/)
+J18`J20,TTL CONSOLE PWR,2,,Generic connector` single row` 01x02` script generated (kicad-library-utils/schlib/autogen/connector/)
+J21,KEYBOARD IRQ,1,,Generic connector` double row` 02x02` counter clockwise pin numbering scheme (similar to DIP package numbering)` script generated (kicad-library-utils/schlib/autogen/connector/)
+J22,BUS IRQ,1,,Generic connector` double row` 02x02` counter clockwise pin numbering scheme (similar to DIP package numbering)` script generated (kicad-library-utils/schlib/autogen/connector/)
+J23,VIDEO IRQ,1,,Generic connector` double row` 02x02` counter clockwise pin numbering scheme (similar to DIP package numbering)` script generated (kicad-library-utils/schlib/autogen/connector/)
+JP2,CTS0,1,,Jumper` 2-pole` open
+JP3,CTS1,1,,Jumper` 2-pole` open
+JP10,JUMPER,1,,Jumper` 2-pole` open
+K2,IDE_PWR,1,,Generic connector` single row` 01x03` script generated (kicad-library-utils/schlib/autogen/connector/)
+K3-K5`K16`K18,CONN_3,5,,Generic connector` single row` 01x03` script generated (kicad-library-utils/schlib/autogen/connector/)
+K17,CPU_CLK,1,,Generic connector` single row` 01x03` script generated (kicad-library-utils/schlib/autogen/connector/)
+P1,IO_ADDR,1,,Generic connector` double row` 02x03` odd/even pin numbering scheme (row 1 odd numbers` row 2 even numbers)` script generated (kicad-library-utils/schlib/autogen/connector/)
+P11,CONN_10X2,1,,Generic connector` double row` 02x10` odd/even pin numbering scheme (row 1 odd numbers` row 2 even numbers)` script generated (kicad-library-utils/schlib/autogen/connector/)
+P12,POWER_SW,1,,Generic connector` single row` 01x02` script generated (kicad-library-utils/schlib/autogen/connector/)
+P13`P18,SERIAL,2,,Generic connector` double row` 02x05` odd/even pin numbering scheme (row 1 odd numbers` row 2 even numbers)` script generated (kicad-library-utils/schlib/autogen/connector/)
+P14,14.31818 MHz CLK,1,,
+P15,AUDIO,1,,Generic connector` double row` 02x05` odd/even pin numbering scheme (row 1 odd numbers` row 2 even numbers)` script generated (kicad-library-utils/schlib/autogen/connector/)
+P16,CONN_4,1,,Generic connector` single row` 01x04` script generated (kicad-library-utils/schlib/autogen/connector/)
+P17,RTC_IO_ADDR,1,,Generic connector` double row` 02x04` odd/even pin numbering scheme (row 1 odd numbers` row 2 even numbers)` script generated (kicad-library-utils/schlib/autogen/connector/)
+P27,FLOPPY,1,,Generic connector` double row` 02x17` odd/even pin numbering scheme (row 1 odd numbers` row 2 even numbers)` script generated (kicad-library-utils/schlib/autogen/connector/)
+P29,PPIDE,1,,Generic connector` double row` 02x20` odd/even pin numbering scheme (row 1 odd numbers` row 2 even numbers)` script generated (kicad-library-utils/schlib/autogen/connector/)
+P31,PARALLEL EXP,1,,Generic connector` double row` 02x13` odd/even pin numbering scheme (row 1 odd numbers` row 2 even numbers)` script generated (kicad-library-utils/schlib/autogen/connector/)
+P37,CPU OSC,1,,
+P41,OSC_FDC,1,,
+P43,CHAN_MIX,1,,Generic connector` double row` 02x02` odd/even pin numbering scheme (row 1 odd numbers` row 2 even numbers)` script generated (kicad-library-utils/schlib/autogen/connector/)
+P51,JOYSTICK0,1,,Generic connector` double row` 02x05` odd/even pin numbering scheme (row 1 odd numbers` row 2 even numbers)` script generated (kicad-library-utils/schlib/autogen/connector/)
+P52,JOYSTICK1,1,,Generic connector` double row` 02x05` odd/even pin numbering scheme (row 1 odd numbers` row 2 even numbers)` script generated (kicad-library-utils/schlib/autogen/connector/)
+P53,FRONT_PANEL,1,,Generic connector` double row` 02x07` odd/even pin numbering scheme (row 1 odd numbers` row 2 even numbers)` script generated (kicad-library-utils/schlib/autogen/connector/)
+R1`R3,10k,2,,Resistor
+R2`R5`R7`R9`R10`R36,470,6,,Resistor
+R4`R26,4.7K,2,,Resistor
+R6`R17`R19`R21,1000,4,,Resistor
+R11,100,1,,Resistor
+R16`R22-R24,10K,4,,Resistor
+R42,2200,1,,Resistor
+R46`R47`RR5`RR7`RR8`RV1`RV2,4700,7,,5 resistor network` star topology` bussed resistors` small symbol`9 resistor network` star topology` bussed resistors` small US symbol`Potentiometer`Resistor
+RP1,150,1,,8 resistor network` star topology` bussed resistors` small symbol
+SW1,POWER,1,,Push button switch` generic` two pins
+SW2,RESET,1,,Push button switch` generic` two pins
+U2`U63,74LS14,2,,Hex inverter schmitt trigger
+U4`U15`U27`U28,74LS245,4,,Octal BUS Transceivers` 3-State outputs
+U5,74LS02,1,,quad 2-input NOR gate
+U6`U7`U18`U59,74LS32,4,,Quad 2-input OR
+U8,74LS08,1,,Quad And2
+U10`U35,MAX232,2,,Dual RS232 driver/receiver` 5V supply` 120kb/s` 0C-70C
+U12,74LS74,1,,Dual D Flip-flop` Set & Reset
+U13,27C080,1,,OTP EPROM 8 MiBit (1 Mi x 8)
+U14,74LS125,1,,Quad buffer 3-State outputs
+U16,74LS244,1,,Octal Buffer and Line Driver With 3-State Output` active-low enables` non-inverting outputs
+U19,74HCT14,1,,Hex inverter schmitt trigger
+U21`U57,74LS682N,2,,
+U23,TMS9918 EMU,1,,
+U24,CLK,1,,
+U25,82c42,1,,
+U26,74LS06,1,,
+U29,DS1233,1,,
+U32,74LS139,1,,Dual Decoder 1 of 4` Active low outputs
+U33,74LS10,1,,Triple 3-input NAND
+U34,74LS393,1,,Dual BCD 4-bit counter
+U38,8255,1,,Programmable Peripheral Interface` PDIP-40
+U39,74LS04,1,,Hex Inverter
+U47,M6242,1,,M6242
+U48,AY-3-8910,1,,
+U49,74LS07N,1,,Hex Buffers and Drivers With Open Collector High Voltage Outputs
+U51,STEREO_JACK,1,,Audio Jack` 3 Poles (Stereo / TRS)
+U52,Z8S180,1,,
+U53,SRAM_512KO,1,,512K x 8 Low Power CMOS RAM` DIP-32
+U55,74LS273,1,,8-bit D Flip-Flop` reset
+U58`U68,74LS138,2,,Decoder 3 to 8 active low outputs
+U61,WD37C65BJM,1,,
+U66`U67,74LS157,2,,Quad 2 to 1 line Multiplexer
+U70,74LS174,1,,Hex D-type Flip-Flop` reset
+X1,RTC_OSC,1,32.768 KHz,Two pin crystal
