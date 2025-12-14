@@ -4,7 +4,7 @@ The N8PC is a Z180 ATX format board with 512K RAM, 512K of ROM, that supports Ro
 ![System](images/N8PC.png)
 
 ## BUGS
-
+```
 V1.1 version PCBs have not been tested yet.
 
 Bodges for V1.0 of Board
@@ -18,7 +18,7 @@ Connect CS_RTC from U47 Pin 2 to U9 Pin 11
 Connect U33 Pin 3 To U5 Pin 5
 Connect U33 Pin 5 To U5 Pin 6
 Connect U18 Pin 2 to U18 Pin 13
-
+```
 
 
 ### Jumper Settings
