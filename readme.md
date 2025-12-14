@@ -11,10 +11,13 @@ Bodges for V1.0 of Board
 U33 Cut Pin 3 traces on both Top and Bottom
 U33 Cut Pin 5 trace on Bottom
 
+U6 Cut Pin 8 trace on Bottom (NOT TOP!!)
+
+
 Connect CS_RTC from U47 Pin 2 to U9 Pin 11
 Connect U33 Pin 3 To U5 Pin 5
 Connect U33 Pin 5 To U5 Pin 6
-
+Connect U18 Pin 2 to U18 Pin 13
 
 
 
