@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "9.0.2"
     },
-    "CreationDate": "2025-11-30T17:08:26-06:00"
+    "CreationDate": "2025-12-13T21:59:41-06:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "N8PC",
       "GUID": "4e385043-2e6b-4696-9361-645f70636258",
-      "Revision": "6/20/2025 004"
+      "Revision": "6/20/2025 005 V1.1"
     },
     "Size": {
       "X": 244.2,

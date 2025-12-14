@@ -5,9 +5,17 @@ The N8PC is a Z180 ATX format board with 512K RAM, 512K of ROM, that supports Ro
 
 ## BUGS
 
-I have not built the 1.0 version -- PCBs on the way
+V1.1 version PCBs have not been tested yet.
 
-The 0.8 verson should not be built -- multiple pull ups are missing, the 5V rail is not robust enough and the ISA design is FUBAR.  It can be made to work, but please wait for the 1.0 version.
+Bodges for V1.0 of Board
+U33 Cut Pin 3 traces on both Top and Bottom
+U33 Cut Pin 5 trace on Bottom
+
+Connect CS_RTC from U47 Pin 2 to U9 Pin 11
+Connect U33 Pin 3 To U5 Pin 5
+Connect U33 Pin 5 To U5 Pin 6
+
+
 
 
 ### Jumper Settings

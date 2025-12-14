@@ -6,8 +6,8 @@
 	(paper "B")
 	(title_block
 		(title "N8PC")
-		(date "2025-11-26")
-		(rev "000.9")
+		(date "2025-12-13")
+		(rev "001.1")
 		(comment 1 "https://github.com/danwerner21/N8PC")
 		(comment 2 "Based on work by Andrew Lynch and John Coffman")
 	)
@@ -7664,9 +7664,9 @@
 			)
 		)
 	)
-	(global_label "{slash}CS_RTC"
+	(global_label "{slash}INTIORQ1"
 		(shape input)
-		(at 177.8 194.31 180)
+		(at 177.8 199.39 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7674,9 +7674,9 @@
 			)
 			(justify right)
 		)
-		(uuid "58252e6c-3606-4a00-9d5d-52dbdd72e16f")
+		(uuid "67ac7ea2-b04c-4dc5-9207-c4d1bb755afe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 167.1838 194.31 0)
+			(at 165.4903 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7765,6 +7765,28 @@
 		(uuid "7a30b942-4cc6-4e91-8202-97dabe44b220")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 96.608 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "{slash}INTIORQ2"
+		(shape input)
+		(at 177.8 194.31 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7a68d1db-a11f-47fb-8f8f-654413ec39f7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 165.4903 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7880,28 +7902,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "{slash}INTIORQ"
-		(shape input)
-		(at 177.8 199.39 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8ff938a8-a748-4ab4-a00e-596135a090a1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 166.6998 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
