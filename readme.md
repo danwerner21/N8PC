@@ -1,6 +1,8 @@
 # N8PC
 The N8PC is a Z180 ATX format board with 512K RAM, 512K of ROM, that supports RomWBW and is compatible enough with MSX to run many games.  It supports a 82c42 PS2 keyboard controller, a TMS9918 emulator (either Pico9918, F19A or Tang Nano) for 80 column video output, a Ay-3-8910 PSG for sound, a 6242 RTC, ATARI/MSX style Joysticks (2 button supported) and 6 ISAish slots.  This computer is supported by the RomWBW ecosystem with full CP/M OS Support.
 
+Note that 9.218Mhz is the recommended system clock speed for this system.  
+
 ![System](images/one.jpg)
 
 ## BUGS
